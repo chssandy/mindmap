@@ -1,0 +1,30 @@
+identity:
+  name: mindmap
+  author: chssandy
+  label:
+    en_US: mindmap
+    zh_Hans: mindmap
+    pt_BR: mindmap
+description:
+  human:
+    en_US: A plugin that automatically generates mindmaps from Markdown content.
+    zh_Hans: A plugin that automatically generates mindmaps from Markdown content.
+    pt_BR: A plugin that automatically generates mindmaps from Markdown content.
+  llm: A plugin that automatically generates mindmaps from Markdown content.
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 待转换内容
+      pt_BR: Query string
+    human_description:
+      en_US: A plugin that automatically generates mindmaps from Markdown content.
+      zh_Hans: A plugin that automatically generates mindmaps from Markdown content.
+      pt_BR: A plugin that automatically generates mindmaps from Markdown content.
+    llm_description: A plugin that automatically generates mindmaps from Markdown content.
+    form: llm
+extra:
+  python:
+    source: tools/mindmap.py

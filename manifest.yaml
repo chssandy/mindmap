@@ -1,0 +1,43 @@
+version: 0.0.1
+type: plugin
+author: chssandy
+name: mindmap
+label:
+  en_US: mindmap
+  ja_JP: mindmap
+  zh_Hans: mindmap
+  pt_BR: mindmap
+description:
+  en_US: A plugin that automatically generates mindmaps from Markdown content.
+  ja_JP: A plugin that automatically generates mindmaps from Markdown content.
+  zh_Hans: A plugin that automatically generates mindmaps from Markdown content.
+  pt_BR: A plugin that automatically generates mindmaps from Markdown content.
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 10485760
+plugins:
+  tools:
+    - provider/mindmap.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 1.4.0
+created_at: 2025-05-21T13:26:32.191917+08:00
+privacy: PRIVACY.md
+verified: false
